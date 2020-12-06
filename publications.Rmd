@@ -1,10 +1,14 @@
 ---
-title: "Intro to RMarkdown"
-subtitle: "Intermezzo, Biological statistics III"
+title: ""
+subtitle: "Publications"
 output:
   rmarkdown::html_document:
     theme: cosmo
 ---
+
+```{r}
+library(knitr)
+```
 
 [![Thesis, 2019](Publication_files/Thesis_front.png)](http://urn.kb.se.ezp.sub.su.se/resolve?urn=urn:nbn:se:su:diva-170360)
 

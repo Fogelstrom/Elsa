@@ -1,0 +1,5 @@
+name: "Elsa Fogelstrom"
+output_dir: "."
+output:
+  html_document:
+    theme: cosmo

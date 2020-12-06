@@ -1,0 +1,16 @@
+---
+title: "Intro to RMarkdown"
+subtitle: "Intermezzo, Biological statistics III"
+output:
+  rmarkdown::html_document:
+    theme: cosmo
+---
+
+[![Thesis, 2019](Publication_files/Thesis_front.png)](http://urn.kb.se.ezp.sub.su.se/resolve?urn=urn:nbn:se:su:diva-170360)
+
+
+[![Fogelstrom, 2017](Publication_files/PlantHerbivoreSync.png)](https://esajournals-onlinelibrary-wiley-com.ezp.sub.su.se/doi/full/10.1002/ecy.1676)
+
+
+
+[![Fogelstrom, 2019](Publication_files/PhenGenSel.png)](https://besjournals-onlinelibrary-wiley-com.ezp.sub.su.se/doi/full/10.1111/1365-2745.13240)

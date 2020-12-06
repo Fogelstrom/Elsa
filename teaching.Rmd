@@ -1,7 +1,16 @@
 ---
-title: ""
-subtitle: "Teaching"
+title: "Teaching"
+subtitle: "Courses and resources"
 output:
   rmarkdown::html_document:
     theme: cosmo
 ---
+
+<br>
+
+### Intro to RMarkdown
+
+#### Intermezzo, *Biological Statistics III*, Stockholm Uni
+
+* [Presentation 2020](Teaching_files/rMarkdown_BiostatIII/IntroToRMarkdown2020.html)  
+* Example formatting

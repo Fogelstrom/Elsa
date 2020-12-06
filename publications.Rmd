@@ -1,18 +1,20 @@
 ---
-title: ""
-subtitle: "Publications"
+title: "Publications"
+subtitle: ""
 output:
   rmarkdown::html_document:
     theme: cosmo
 ---
+[![Fogelstrom, 2019](Publication_files/Drakblomma_mini.png)](https://www.lansstyrelsen.se/vastra-gotaland/tjanster/publikationer/2020/hur-gar-det-for-drakblomman.html)
+
+
+[![Fogelstrom, 2019](Publication_files/PhenGenSel_mini.png)](https://besjournals-onlinelibrary-wiley-com.ezp.sub.su.se/doi/full/10.1111/1365-2745.13240)
+
+
+[![Fogelstrom, 2017](Publication_files/PlantHerbivoreSync_mini.png)](https://esajournals-onlinelibrary-wiley-com.ezp.sub.su.se/doi/full/10.1002/ecy.1676)
+
+
+[![Thesis, 2019](Publication_files/Thesis_front_mini.png)](http://urn.kb.se.ezp.sub.su.se/resolve?urn=urn:nbn:se:su:diva-170360)
 
 
 
-[![Thesis, 2019](Publication_files/Thesis_front.png)](http://urn.kb.se.ezp.sub.su.se/resolve?urn=urn:nbn:se:su:diva-170360)
-
-
-[![Fogelstrom, 2017](Publication_files/PlantHerbivoreSync.png)](https://esajournals-onlinelibrary-wiley-com.ezp.sub.su.se/doi/full/10.1002/ecy.1676)
-
-
-
-[![Fogelstrom, 2019](Publication_files/PhenGenSel.png)](https://besjournals-onlinelibrary-wiley-com.ezp.sub.su.se/doi/full/10.1111/1365-2745.13240)

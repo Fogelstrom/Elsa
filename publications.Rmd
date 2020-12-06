@@ -6,9 +6,7 @@ output:
     theme: cosmo
 ---
 
-```{r}
-library(knitr)
-```
+
 
 [![Thesis, 2019](Publication_files/Thesis_front.png)](http://urn.kb.se.ezp.sub.su.se/resolve?urn=urn:nbn:se:su:diva-170360)
 

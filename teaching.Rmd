@@ -1,0 +1,7 @@
+---
+title: ""
+subtitle: "Teaching"
+output:
+  rmarkdown::html_document:
+    theme: cosmo
+---

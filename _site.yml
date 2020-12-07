@@ -3,8 +3,6 @@ output_dir: "."
 navbar:
   title: "Elsa Fogelström"
   left:
-    - text: "Home"
-      href: elsa_fogelstrom_home.html
     - text: "Publications"
       href: publications.html
     - text: "Teaching"

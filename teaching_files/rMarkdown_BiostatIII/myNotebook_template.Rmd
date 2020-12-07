@@ -1,0 +1,166 @@
+---
+title: "Intro to Rmarkdown"
+author: "Elsa F"
+date: "8 Dec 2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+
+Metadata
+
+Text
+
+Code chunks
+
+
+
+Metadata
+
+Document specific settings (author, date, output format ...)
+
+Separated with 3 dashes (---)
+
+Syntax=YAML
+
+"YAML metadata", "YAML header", "YAML frontmatter" ...
+
+
+
+
+
+Text
+Markdown, a simple formatting language 
+Plain text with simple formatting 
+
+
+
+*italics*
+**bold**
+
+
+# header1
+
+## header2
+
+### header3
+
+
+* this is
+- a list
+
+
+1. this is a
+2. numbered list 
+
+
+
+Mathematical annotation (LaTeX)
+
+inline mathematical annotation:
+
+Eqn. 1: $\frac{x}{x^2}$
+
+
+$$Y \tilde~\beta_0~+~\beta_1*x~+~\epsilon$$
+
+
+
+
+
+Code
+
+A chunk:
+
+```{r}
+plot(iris$Petal.Length ~ iris$Species)
+```
+
+
+Insert code chunks:
+
+keyboard shortcuts:
+Ctrl+Alt+I
+Cmd+Shift+Enter
+
+
+Execute code
+Ctrl/Cmd+Shift+Enter
+To run selected lines: Ctrl/Cmd + Enter
+
+
+
+
+```{r}
+#library (knitr)
+
+mod <- lm(Petal.Length ~ Species, data =iris)
+
+
+# present model output as table
+knitr::kable(summary(mod)$coefficients, digits=3, format = 'html')
+```
+
+
+
+```{r}
+library(pander)
+panderOptions('round', 3) 
+pander(mod)
+```
+
+
+
+
+
+```{r}
+# Set knitr options for the entire document
+
+knitr::opts_chunk$set(echo = FALSE, # hide code
+                      # align figures 
+                      # (does not work with word):
+                      fig.align = "center")
+
+```
+
+
+
+
+
+
+
+# Embedded links
+
+You can find info about the *Iris dataset* [here](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+
+# Pictures
+
+![a picture](http://www.theflowersavenue.com/gallery/iris/iris_2.jpg)
+
+
+```{r}
+knitr::include_graphics(
+'Presentation2020/images/Iris_virginica.jpg')
+```
+
+
+# Code within text  
+
+`inline code`
+
+There are n entries in the *Iris* dataset
+There are `r nrow(iris)` entries in the *Iris* dataset
+
+
+
+
+
+```{r}
+# Set knitr options for the entire document
+knitr::opts_chunk$set(echo = FALSE, # hide code
+                      # align figues left
+                      # (does not work with word):
+                      fig.align = "left")
+```

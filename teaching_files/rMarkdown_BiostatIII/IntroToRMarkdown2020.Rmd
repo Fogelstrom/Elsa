@@ -1,7 +1,7 @@
 ---
 title: "Intro to R Markdown"
 subtitle: "Biological statistics III"
-author: "Elsa Fogelström"
+author: "Elsa Fogelstrom"
 date: "8 December 2020"
 institute: Department of Ecology, Environment and Plant Sciences
 keywords: r, markdown
@@ -32,6 +32,14 @@ class: spaced
 ```{r, include=FALSE}
 #xaringan::summon_remark()
 #date: "`r format(Sys.time(), '%d %B, %Y')`"
+```
+
+
+```{r get pdf, eval = FALSE, include = FALSE}
+# remotes::install_github(c('rstudio/pagedown', 'yihui/xaringan'))
+# pagedown::chrome_print("IntroToRMarkdown2020.html",output="IntroToRMarkdown2020.pdf")
+# xaringan::decktape("IntroToRMarkdown2020.html",output="IntroToRMarkdown2020.pdf")
+
 ```
 
 
@@ -97,14 +105,11 @@ Produce neat, reproducible reports directly from your code
 ```
 
 
---
+
 <br>
 <br>
 
-<https://fogelstrom.github.io/IntroToRMarkdown_BiostatIII_2020/>
 
-
---
 <br>
 <br>
 
@@ -136,13 +141,13 @@ Save and execute R code
 --
 
 
-Add text with simple formatting to produce *reproducible*  
+Add text with simple formatting to produce  
 * Documents (reports, manuscripts ...)
 * Presentations  
 * Web pages
 * Books
 
-*directly from your code and data*
+directly from your code and data
 
 
 ---
@@ -167,8 +172,12 @@ LaTeX, e.g. [TinyTeX](https://yihui.name/tinytex/), to produce PDF documents
 
 <br>
 
-Installing `tidyverse` will install both RMarkdown and tinytex. Tidyverse is very useful for data management.]
+Installing `tidyverse` will install both RMarkdown and TinyTeX. Tidyverse contains many useful packages for data management and visualization.]
 
+
+```{r include = FALSE, eval = FALSE}
+# tidyverse::tidyverse_deps(recursive = TRUE, repos = getOption("repos"))
+```
 
 
 .pull-right-50[
@@ -181,7 +190,7 @@ dependencies = TRUE)
 install.packages("tinytex")
 tinytex::install_tinytex()
 ```
-
+<br>
 ```
 install.packages("tidyverse", 
 dependencies = TRUE)
@@ -277,14 +286,12 @@ Separated with 3 dashes (`---`)]
 
 --
 
-.pull-left-50[Often referred to as "YAML metadata", "YAML header", "YAML frontmatter" ...
+.pull-left-50[Syntax = YAML  
 
-Syntax=YAML  
-*"YAML Ain't  Markup Language"* 
 
-.pull-center[<i>"[...] a human friendly data serialization
-  standard for all programming languages"</i>  
-  .vsmall[[official YAML website](http://yaml.org/)]]  
+Often referred to as "YAML metadata", "YAML header", "YAML frontmatter" ...
+
+
 ]
 
 ---
@@ -364,7 +371,7 @@ class:spaced
 
 --
 
-**use double space to make a line break**  
+To make sure that a line break is made, **use double space**  
 --
 
 
@@ -599,24 +606,6 @@ Options: `'left', 'right', 'center' `
 `{r warning=FALSE,message=FALSE}`
 
 
-##Knitr options
-
-![an image](images/AChunk_KnitrOptions.png)
-
---
-
-###Show/hide code and output
-
-.pull-left-70[
-
-Hide code: `{r echo=FALSE}`  
-
-Hide code and output: `{r include=FALSE}`  
-
-Don't run chunk: `{r eval=FALSE}`  
-
-]
-
 
 ---
 name: slide
@@ -647,7 +636,7 @@ class: left, inverse, spaced
 <br>
 
 ```{r}
-library (knitr)
+# library (knitr)
 # specify a model:
 mod <- lm(Petal.Length ~ Species, data =iris)
 
@@ -660,9 +649,8 @@ knitr::kable(summary(mod)$coefficients, digits=3, format = 'html')
 <br>
 
 
-.small[Works for .html and .pdf documents. Does not work for making .docx documents
-
-`format` needs to be set to `format = 'latex'` when knitting to pdf]
+Works for .html and .pdf documents. Does not work for making .docx documents. 
+`format` needs to be set to `format = 'latex'` when knitting to pdf
 
 ---
 name: slide
@@ -682,7 +670,7 @@ pander(mod)
 ```
 <br>
 
-I use it a lot for making tables for word documents. Did not work well in this .htlm presentation. 
+I use it a lot for making tables for word documents. Works for .pdf and .html documents too. Did not work well in this .htlm presentation. 
 
 <br>
 
@@ -708,7 +696,6 @@ There are `` `r `` `` nrow(iris)` `` entries in the iris dataset
 ]
 
 .pull-right-30[
-<br>
 <br>
 
 `Inline` code  
@@ -838,26 +825,24 @@ class: left, inverse, spaced
 names: slide
 class: left, inverse, spaced
 
-##Let's make a report!
+## Try it for yourselves!
 
 1. Create a new .Rmd file  
 
-2. Make your own short report on a subject of your choice (or try to replicate the 'ExampleReport'). Try to include as much formatting as possible:  
+2. Play around with as much formatting as possible:  
 
   * edit the YAML metadata  
   * headers 
   * <b>bold</b>, <i>italics</i>, lists
   * inline code  
-  * figures from data (plot variables in `iris` dataset)  
+  * figures from data (using your own data or the `iris` dataset)  
   * mathematical annotation  
   * visible/hidden r code
   * ...  
 
 3. Click the *Preview* button to see how it turned out
 
-4. Render your report to the format of your choice  
-
-<https://fogelstrom.github.io/IntroToRMarkdown_BiostatIII_2020/>
+4. Render your report to different document formats
 
 
 ---
@@ -871,17 +856,14 @@ class: left, inverse, spaced
 
 Within/outside code chunks? 
 
---
-
-###Text formatting  
-
-Forgetting double space to create linebreaks  
-
---
 
 ###Error message:
-Google it! You're probably not the first to get that error message
+Search online! You're probably not the first to get that error message
 
+
+### Best practices and solutions to common problems:
+
+https://rmd4sci.njtierney.com/common-problems-with-rmarkdown-and-some-solutions.html
 ---
 class: left, inverse, spaced
 
@@ -892,6 +874,9 @@ class: left, inverse, spaced
 
 Error message when installing on mac:
 https://github.com/yihui/tinytex/issues/24
+
+Update or reinstall TinyTex https://yihui.name/tinytex/r/#debugging
+ 
 
 If TinyTex doesn't work, try using [texworks](http://www.tug.org/texworks/)
 
@@ -938,6 +923,33 @@ class: spaced
 [*R Markdown: The Definitive Guide* (Yihui Xie, J. J. Allaire, Garrett Grolemund)](https://bookdown.org/yihui/rmarkdown/)
 
 [Knitr output options (Yihui Xie)](https://yihui.name/knitr/options/)
+
+
+
+---
+names: slide
+class: left, inverse, spaced
+
+## Try it for yourselves!
+
+1. Create a new .Rmd file  
+
+2. Play around with as much formatting as possible:  
+
+  * edit the YAML metadata  
+  * headers 
+  * <b>bold</b>, <i>italics</i>, lists
+  * inline code  
+  * figures from data (using your own data or the `iris` dataset)  
+  * mathematical annotation  
+  * visible/hidden r code
+  * ...  
+
+3. Click the *Preview* button to see how it turned out
+
+4. Render your report to different document formats
+
+
 
 ---
 name: end-slide

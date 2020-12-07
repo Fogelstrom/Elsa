@@ -1,3 +1,2 @@
 # Elsa
-personal website
-Address: https://fogelstrom.github.io/Elsa/
+personal website https://fogelstrom.github.io/Elsa/

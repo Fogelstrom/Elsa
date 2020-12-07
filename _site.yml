@@ -1,0 +1,5 @@
+name: "my-website"
+output_dir: "."
+output:
+  html_document:
+    theme: cosmo

@@ -25,4 +25,4 @@ output:
 
 ## Peer review
 
-[See my list of registered reviews on publons](https://publons.com/researcher/1628963/elsa-fogelstrom/)
+[See my registered reviews on publons](https://publons.com/researcher/1628963/elsa-fogelstrom/)

@@ -2,11 +2,4 @@ name: "Elsa Fogelstrom"
 output_dir: "."
 navbar:
   title: "Elsa Fogelström"
-  left:
-    - text: "Teaching"
-      href: teaching.html
-    - text: "Publications"
-      href: publications.html
-output:
-  html_document:
-    theme: cosmo
+  href: index.html

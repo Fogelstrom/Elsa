@@ -13,4 +13,4 @@ output:
 #### Intermezzo, *Biological Statistics III*, Stockholm Uni
 
 * [Presentation 2020](teaching_files/rMarkdown_BiostatIII/IntroToRMarkdown2020.html)  
-* Example formatting
+* [Example formatting](teaching_files/rMarkdown_BiostatIII/myNotebook.Rmd)  

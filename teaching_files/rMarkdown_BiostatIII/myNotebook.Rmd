@@ -1,0 +1,148 @@
+---
+title: "R Notebook"
+author: "Elsa F"
+date: "8 Dec 2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+```{r}
+# Set knitr options for the all chunks in the
+# entire document
+knitr::opts_chunk$set(echo = FALSE, # hide code
+                      # align figures 
+                      # (does not work with word):
+                      fig.align = "center")
+```
+
+Metadata
+
+Syntax=YAML
+"YAML metadata", "YAML header", "YAML frontmatter" ...
+
+
+Editing metadata
+
+Output formats
+
+github_document  
+html_document  
+latex_document  
+md_document  
+odt_document  
+pdf_document  
+word_document  
+
+beamer_presentation  
+ioslides_presentation  
+powerpoint_presentation  
+rtf_document  
+slidy_presentation   
+
+
+Text
+
+
+**Markdown** a *simple* formatting language 
+
+Plain text with simple formatting 
+
+
+# header1
+
+## header2
+
+### header3
+
+
+* this is
+- a list
+
+
+1. this is a
+2. numbered list 
+
+#### Mathematical annotation (LaTeX)
+
+inline mathematical annotation:
+
+Eqn. 1:$\frac{x}{x^2}$  
+
+
+Centered mathematical annotation:
+  
+$$Y~\tilde~\beta_0~+~\beta_1\times{x}~+~\epsilon$$
+
+#### Code
+
+```{r eval=FALSE, fig.height=3, include=FALSE}
+
+# A code chunk
+
+plot(cars)
+```
+Insert code chunks:
+
+keyboard shortcuts:
+Ctrl+Alt+I
+Cmd+Shift+Enter
+
+
+Execute code
+Ctrl/Cmd+Shift+Enter
+To run selected lines: Ctrl/Cmd + Enter
+
+
+### Iris dataset
+
+```{r echo=FALSE}
+plot(iris$Petal.Length ~ iris$Species)
+```
+
+```{r echo=FALSE}
+mod <- lm(Petal.Length ~ Species, data =iris)
+#summary(mod)
+```
+```{r}
+#library (knitr)
+
+# present model output as table
+knitr::kable(summary(mod)$coefficients, digits=3, format = 'latex')
+# change format to 'latex' for pdf output
+```
+
+```{r}
+library(pander)
+panderOptions('round', 3) 
+pander(mod)
+```
+
+
+
+#### Embedded links  
+
+
+You can find info about the *Iris dataset* [here](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+
+
+#### Pictures  
+
+![caption](https://upload.wikimedia.org/wikipedia/commons/2/27/Blue_Flag%2C_Ottawa.jpg)
+
+
+![](Iris_virginica.jpg)
+
+
+
+```{r fig.height=4, fig.width=4}
+knitr::include_graphics('Iris_virginica.jpg')
+```
+
+
+There are `r nrow(iris)` entries in the *Iris* dataset  
+
+There are `nrow(iris)` entries in the *Iris* dataset  
+

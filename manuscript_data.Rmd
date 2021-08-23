@@ -1,0 +1,10 @@
+---
+title: "Data"
+output:
+  rmarkdown::html_document:
+    theme: cosmo
+---
+
+<br>
+
+[Data from: Simultaneous selection on vegetative and reproductive phenology in a perennial herb](data_files/Data_SimultaneousSelection.zip)  

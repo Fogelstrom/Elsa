@@ -7,6 +7,8 @@ navbar:
       href: publications.html
     - text: "Teaching"
       href: teaching.html
+    - text: "Data"
+      href: manuscript_data.html
 output:
   html_document:
     theme: cosmo

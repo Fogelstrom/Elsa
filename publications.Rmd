@@ -6,6 +6,10 @@ output:
     theme: cosmo
 ---
 
+[![Fogelstrom, 2021](publications_files/selection_authorea.png)](https://doi.org/10.22541/au.163350159.95411111/v1)
+
+[![Fogelstrom, 2021](publications_files/spring_autumn.png)](https://doi.org/10.1002/ajb2.1789)
+ 
 
 [![Fogelstrom, 2019](publications_files/Drakblomma_mini.png)](https://www.lansstyrelsen.se/vastra-gotaland/tjanster/publikationer/2020/hur-gar-det-for-drakblomman.html)
 

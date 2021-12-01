@@ -1,7 +1,7 @@
 ---
 title: "Intro to R Markdown"
 subtitle: "Biological statistics III"
-author: "Elsa Fogelstrom"
+author: "Elsa Fogelstrom, elsa.fogelstrom@gmail.com"
 date: "6 December 2021"
 keywords: r, markdown
 output: 

@@ -1,7 +1,7 @@
 ---
 title: "Intro to R Markdown"
 subtitle: "Biological statistics III"
-author: "Elsa Fogelstrom, elsa.fogelstrom@gmail.com"
+author: "Elsa Fogelström, elsa.fogelstrom@gmail.com"
 date: "6 December 2021"
 keywords: r, markdown
 output: 
@@ -378,11 +378,11 @@ To make sure that a line break is made, **use double space**
 `*italics*`  
 `**bold**`  
 <br>  
-` #header1`  
+` # header1`  
 
-`##header2`  
+`## header2`  
 
-`###header3`  
+`### header3`  
 
 
 ]
@@ -500,8 +500,8 @@ Code is included in *chunks* separated by three backticks (``` ``` ```)
 <br>
 
 keyboard shortcuts:  
-*Ctrl+Alt+I*  
-*Cmd+Shift+Enter*]
+*Ctrl+Alt+i*  
+*Cmd+Option+i*]
 
 
 .pull-right-50[

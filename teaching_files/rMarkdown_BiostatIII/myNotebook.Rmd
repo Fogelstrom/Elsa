@@ -3,13 +3,14 @@ title: "R Notebook"
 author: "Elsa F"
 date: "8 Dec 2020"
 output:
-  pdf_document: default
+  pdf_document: 
+    latex_engine: xelatex
   html_document:
     df_print: paged
   word_document: default
 ---
 
-```{r}
+```{r echo = FALSE}
 # Set knitr options for the all chunks in the
 # entire document
 knitr::opts_chunk$set(echo = FALSE, # hide code
@@ -71,12 +72,13 @@ inline mathematical annotation:
 
 Eqn. 1:$\frac{x}{x^2}$  
 
-
 Centered mathematical annotation:
   
-$$Y~\tilde~\beta_0~+~\beta_1\times{x}~+~\epsilon$$
+$$Y \sim \beta_0~+~\beta_1\times{x}~+~\epsilon$$  
 
-#### Code
+
+#### Code  
+
 
 ```{r eval=FALSE, fig.height=3, include=FALSE}
 
@@ -130,15 +132,19 @@ You can find info about the *Iris dataset* [here](https://en.wikipedia.org/wiki/
 
 #### Pictures  
 
-![caption](https://upload.wikimedia.org/wikipedia/commons/2/27/Blue_Flag%2C_Ottawa.jpg)
+[![caption](https://upload.wikimedia.org/wikipedia/commons/2/27/Blue_Flag%2C_Ottawa.jpg)](https://www.wikimedia.org)  
 
 
-![](Iris_virginica.jpg)
+![](images/Iris_virginica.jpg) 
 
+
+```{r eval = FALSE}
+#Note that the path to "Iris_virginica.jpg" above and below leads to a subfolder in my R project folder - change this for a path to a picture saved on your computer
+```
 
 
 ```{r fig.height=4, fig.width=4}
-knitr::include_graphics('Iris_virginica.jpg')
+knitr::include_graphics('images/Iris_virginica.jpg')
 ```
 
 

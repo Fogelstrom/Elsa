@@ -12,5 +12,5 @@ output:
 
 #### Intermezzo, *Biological Statistics III*, Stockholm Uni
 
-* [Presentation 2022](teaching_files/rMarkdown_BiostatIII/IntroToRMarkdown2022.html)  
+* [Presentation 2022](teaching_files/rMarkdown_BiostatIII/IntroToRMarkdown2022.pdf)  
 * [Example formatting](teaching_files/rMarkdown_BiostatIII/myNotebook.Rmd)  
